@@ -1,4 +1,4 @@
-package model;
+package beans;
 
 import java.io.Serializable;
 
@@ -78,6 +78,15 @@ public class Adress implements Serializable{
 
 	public void setPostalcode(int postalcode) {
 		this.postalcode = postalcode;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Adress [street=" + street + ", number=" + number + ", city=" + city + ", postalcode=" + postalcode
+				+ "]";
 	}
 
 	
