@@ -23,7 +23,7 @@ Vue.component("home-page", {
 	},
 	template: ` 
  <div id="home" style="background : #fff">
-
+ 
     <div class="jumbotron">
       <div class="container text-center">
         <h1 style="color:#191970">Fitpass</h1>      
@@ -51,7 +51,7 @@ Vue.component("home-page", {
         </div>
       </div>
     </nav>
-    
+    <!--
     <div class="search">
         <input type="text" v-model="searchName" 	class="search-input" placeholder="Naziv teretane">
         <input type="text" v-model="searchLocation" class="search-input" placeholder="Lokacija teretane">
@@ -72,7 +72,7 @@ Vue.component("home-page", {
     
         <button class="search-submit" v-on:click="searchRestaurants"> Pretraži </button>
     </div>
-    <!--
+    
     <div class="col-sm-2 sidenav" style="position: absolute; left: 1%; top: 50%; border-radius: 25px; background-color: cornsilk;">
     	<label style="color: darkgrey;" > Filteri: </label><br/><br/>
         <input type="checkbox" @change="showOnlyOpenRestaurants($event)" id="open-restaurants" value="restaurant">
@@ -159,7 +159,7 @@ Vue.component("home-page", {
         </div>
       </div>
     </div>
-    
+    </div>
 `
 	, 
 	/*

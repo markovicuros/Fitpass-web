@@ -37,7 +37,7 @@ public class UsersController {
 				User loggedUser = session.attribute("user");
 				if(loggedUser == null)
 					session.attribute("user", newUser);
-				
+				System.out.print("REGISTROVANxd ");
 				return gson.toJson(newUser);
 			
 			} catch(Exception e) {
