@@ -24,6 +24,7 @@ public class User implements Serializable{
 	private SportsFacility visited_object;
 	private int collectedPoints;
 	private CustomerType customer_type;
+	private boolean isDeleted;
 	
 	
 	
@@ -270,6 +271,16 @@ public class User implements Serializable{
 	@Override
 	public String toString() {
 		return "User [name=" + name + ", surname=" + surname + "]";
+	}
+
+
+	public boolean isDeleted() {
+		return isDeleted;
+	}
+
+
+	public void setDeleted(boolean isDeleted) {
+		this.isDeleted = isDeleted;
 	}
 
 	

@@ -162,7 +162,7 @@ Vue.component("home-page", {
     
 `
 	, 
-	
+	/*
 	mounted () {
      	    axios
           		.get('/restaurants/getAll')
@@ -179,7 +179,7 @@ Vue.component("home-page", {
 					this.restaurantTypes= response.data;
 				}
 			});
-    },
+    },*/
 	
 	methods : {
 		/*addToCart : function (product) {
@@ -195,7 +195,7 @@ Vue.component("home-page", {
 		loginClose: function (event) {
 			document.querySelector('.bg-modal').style.display = 'none';
 		},
-		
+		/*
 		setAscendingSortMode : function (event) {
 			this.sortMode = 'asc';
 		},
@@ -258,7 +258,7 @@ Vue.component("home-page", {
 		    		   this.restaurants = response.data;
 		    	})
 		},
-		
+		*/
 		register : function (event) {
 			document.querySelector('.registracija').style.display = 'flex';
 		},
@@ -389,8 +389,8 @@ Vue.component("home-page", {
 								window.location.href = "#/customer";
 							} else if (response.data.role == "MANAGER"){
 								window.location.href = "#/manager";
-							} else if (response.data.role == "DELIVERER") {
-								window.location.href = "#/deliverer";
+							} else if (response.data.role == "COACH") {
+								window.location.href = "#/coach";
 							} else if (response.data.role == "ADMIN") {
 								window.location.href = "#/admin";
 							} else {

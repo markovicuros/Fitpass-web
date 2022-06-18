@@ -1,0 +1,19 @@
+[
+  {
+    "username": "customer",
+    "password": "customer",
+    "name": "Asas",
+    "surname": "Asas",
+    "gender": "MALE",
+    "dateOfBirth": "1990-02-28",
+    "role": "CUSTOMER",
+    "training_history": null,
+    "membership": null,
+    "sports_facility": null,
+    "visited_object": null,
+    "collectedPoints": 5,
+    "customer_type": null,
+    "isDeleted": false,
+    "isBlocked": false
+  }
+]
