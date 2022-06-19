@@ -332,7 +332,7 @@ Vue.component("home-page", {
     				}
     					
 						axios 
-		    			.post('/users/register', JSON.stringify(newUser))
+		    			.post('/users/register', JSON.stringify(newUser))/*
 		    			.then(response => {
 		    				if (response.data == "") {
 								document.getElementById('usernameLabel').innerHTML = "Vec postoji uneto korisnicko ime!";
@@ -344,7 +344,7 @@ Vue.component("home-page", {
 									document.querySelector('.registracija').style.display = 'none';
 								});
 							}
-		    			})
+		    			})*/
 		    			.catch(error => {
 						    console.log(error.response)
 						});
