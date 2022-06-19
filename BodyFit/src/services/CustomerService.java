@@ -16,7 +16,7 @@ import javax.ws.rs.core.MediaType;
 import beans.Customer;
 import dao.CustomerDao;
 import dto.UserDto;
-@Path("customers")
+@Path("/customers")
 public class CustomerService {
 	CustomerDao customerDao = new CustomerDao();
 	
@@ -41,7 +41,7 @@ public class CustomerService {
 		return customerDao.getAllToList();
 	}
 	@POST
-	@Path("/")	
+	@Path("/Create")	
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Customer createCustomer(UserDto customer) {

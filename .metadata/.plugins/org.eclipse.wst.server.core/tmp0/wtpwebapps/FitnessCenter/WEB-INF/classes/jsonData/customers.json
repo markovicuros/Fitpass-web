@@ -46,5 +46,23 @@
     "userRole": "CUSTOMER",
     "deleted": false,
     "banned": false
+  },
+  "jhgfd": {
+    "visitedFacilities": [],
+    "customerType": {
+      "name": "BRONZE",
+      "discount": 0.0,
+      "minPoints": 0
+    },
+    "colletedPoints": 0.0,
+    "username": "jhgfd",
+    "password": "gfd",
+    "name": "ss",
+    "surname": "ss",
+    "birthday": "Jun 8, 2022, 2:00:00 AM",
+    "gender": "FEMALE",
+    "userRole": "CUSTOMER",
+    "deleted": false,
+    "banned": false
   }
 }

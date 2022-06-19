@@ -45,3 +45,9 @@
 0:0:0:0:0:0:0:1 - - [19/Jun/2022:17:50:43 +0200] "GET /FitnessCenter/ HTTP/1.1" 200 1042
 0:0:0:0:0:0:0:1 - - [19/Jun/2022:17:50:43 +0200] "GET /FitnessCenter/app/sportsFacilities.js HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [19/Jun/2022:17:50:43 +0200] "GET /FitnessCenter/rest/facilities/GetAll HTTP/1.1" 200 1418
+0:0:0:0:0:0:0:1 - - [19/Jun/2022:19:05:30 +0200] "GET /FitnessCenter/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Jun/2022:19:05:30 +0200] "GET /FitnessCenter/app/sportsFacilities.js HTTP/1.1" 200 439
+0:0:0:0:0:0:0:1 - - [19/Jun/2022:19:05:30 +0200] "GET /FitnessCenter/rest/facilities/GetAll HTTP/1.1" 200 1418
+0:0:0:0:0:0:0:1 - - [19/Jun/2022:23:59:50 +0200] "GET /FitnessCenter/ HTTP/1.1" 200 2178
+0:0:0:0:0:0:0:1 - - [19/Jun/2022:23:59:50 +0200] "GET /FitnessCenter/app/sportsFacilities.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Jun/2022:23:59:51 +0200] "GET /FitnessCenter/rest/facilities/GetAll HTTP/1.1" 200 1418

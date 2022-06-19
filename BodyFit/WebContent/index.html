@@ -9,7 +9,7 @@
 
     <body>
     <div id="sportsFacilities">
-
+	<form>
     <h1>{{title}}</h1>
     <table border="1" id="tabela">
         <thead>
@@ -31,9 +31,63 @@
             <td>{{sf.averageGrade}}</td>
            
         </tr>
-
-
     </table>
+    <button @click.prevent="showForm()">Dodaj</button>
+    </form>
+			<form id="forma" @submit="createOrEditProduct" v-bind:hidden="mode=='BROWSE'" >
+
+				<table>
+					<tr>
+						<td>Name:</td>
+						<td><input  type="text" name="name"
+							v-model="user.name" /></td>
+					</tr>
+
+					<tr>
+						<td>Surname:</td>
+						<td><input type="text" name="name"
+							v-model="user.surname" />
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Username:</td>
+						<td><input type="text" name="name"
+							v-model="user.username" />
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Gender:</td>
+						<td><select v-model="user.gender">
+                			<option>MALE</option>
+               				 <option>FEMALE</option>
+           				 </select>
+						</td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type="text" name="name"
+							v-model="user.password" />
+						</td>
+					</tr>
+					<tr>
+						<td>Birthday:</td>
+						<td> <input type="date" name="birthday" v-model="user.birthday">
+						</td>
+					</tr>
+				<!-- 	<tr>
+						<td>UserRole:</td>
+						<td><input type="text" name="userRole"
+							v-model="user.userRole" />
+						</td>
+					</tr>
+					<tr> -->
+						<td><input type="submit" value="Pošalji" /></td>
+						
+					</tr>
+				</table>
+			</form>
     </div>
 
     <script src="js/vue.js"></script>
