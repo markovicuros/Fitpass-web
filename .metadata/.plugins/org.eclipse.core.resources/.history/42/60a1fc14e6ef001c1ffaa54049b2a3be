@@ -1,0 +1,14 @@
+var sportFacilities = new Vue({
+    el:'#sportsFacilities',
+    data:{
+        sportFacilities: null,
+        title: "Sports Facilities"
+    },
+    mounted(){
+        axios.get('rest/sportFacilities/getAll')
+             .then(response =>(this.sportFacilities = response.data))
+    },
+    methods:{
+
+    }
+});

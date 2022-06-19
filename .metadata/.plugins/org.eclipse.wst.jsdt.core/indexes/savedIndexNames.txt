@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\Ivana\pythonProject\OneDrive\Desktop\projekti\web projekat\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+197939723.index
+3996663919.index
+3752166885.index
+4071428425.index
+1268737832.index
+3883606843.index
