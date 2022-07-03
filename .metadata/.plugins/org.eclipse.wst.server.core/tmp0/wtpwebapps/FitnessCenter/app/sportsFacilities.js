@@ -21,16 +21,9 @@ var sportFacilities = new Vue({
 		},
 		showForm: function() {
 			this.mode = "CREATE";
-			this.user = { id: null, name: null, surname: null, username: null, password: null, birthday: null, gender: Gender.MALE,userRole:UserRole.CUSTOMER,deleted:false,banned:false };
+			this.user = { id: null, name: null, surname: null, username: null, password: null, birthday: null, gender:'FEMALE',userRole:'CUSTOMER',deleted:false,banned:false };
 		},
 		createOrEditProduct: function(event) {
-			//this.error = "";
-			/*if (this.selectedProduct.polaziste.toLowerCase() === this.selectedProduct.odrediste.toLowerCase()) {
-				this.error = "NE MOZE ISTI NAZIV ZA POLAZISTE I ODREDISTE";
-				alert("NE MOZE ISTI NAZIV ZA POLAZISTE I ODREDISTE");
-				event.preventDefault();*/
-				//return;
-				//this.mode = "CREATE";
 				event.preventDefault();
 				if (this.mode == "CREATE") {
 				axios

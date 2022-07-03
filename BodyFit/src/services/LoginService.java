@@ -70,6 +70,7 @@ public class LoginService   {
 	@Produces(MediaType.TEXT_PLAIN)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public boolean SuccesLoginIn(User user) {
+		System.out.println(ctx.getRealPath(""));
 		UserState loginState = customerLogIn(user);
 		boolean loginStatus= false;
 		if(loginState == UserState.SUCCESS) {
@@ -87,6 +88,7 @@ public class LoginService   {
 		if(loginState == UserState.SUCCESS) {
 			loginStatus = true;
 		}
+		System.out.println(ctx.getRealPath(""));
 		return loginStatus;
 		
 	}
