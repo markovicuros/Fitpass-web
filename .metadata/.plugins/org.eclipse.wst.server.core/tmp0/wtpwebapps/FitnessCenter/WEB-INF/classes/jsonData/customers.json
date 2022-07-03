@@ -1,0 +1,86 @@
+{
+  "mikiia": {
+    "colletedPoints": 11.0,
+    "username": "mikiia",
+    "password": "mikia",
+    "name": "marinko",
+    "surname": "marinko",
+    "birthday": "Jun 15, 2022, 2:36:51 AM",
+    "gender": "FEMALE",
+    "userRole": "CUSTOMER",
+    "deleted": false,
+    "banned": false
+  },
+  "djokaa": {
+    "colletedPoints": 144.0,
+    "username": "Djoka",
+    "password": "Djokovic",
+    "name": "Jelena",
+    "surname": "Djokovic",
+    "birthday": "Jun 15, 2022, 2:36:51 AM",
+    "gender": "MALE",
+    "userRole": "CUSTOMER",
+    "deleted": false,
+    "banned": false
+  },
+  "laza": {
+    "colletedPoints": 11.0,
+    "username": "laza@g.com",
+    "password": "lazarevic",
+    "name": "m",
+    "surname": "m",
+    "birthday": "Jun 18, 2022, 10:16:40 PM",
+    "gender": "MALE",
+    "userRole": "CUSTOMER",
+    "deleted": false,
+    "banned": false
+  },
+  "aa": {
+    "colletedPoints": 11.0,
+    "username": "aa",
+    "password": "lazarevic",
+    "name": "m",
+    "surname": "m",
+    "birthday": "Nov 11, 2019, 1:00:00 AM",
+    "gender": "MALE",
+    "userRole": "CUSTOMER",
+    "deleted": false,
+    "banned": false
+  },
+  "y@g.c": {
+    "visitedFacilities": [],
+    "customerType": {
+      "name": "BRONZE",
+      "discount": 0.0,
+      "minPoints": 0
+    },
+    "colletedPoints": 0.0,
+    "username": "y@g.c",
+    "password": "y",
+    "name": "y",
+    "surname": "y",
+    "birthday": "Jul 2, 2022, 2:00:00 AM",
+    "gender": "FEMALE",
+    "userRole": "CUSTOMER",
+    "deleted": false,
+    "banned": false
+  },
+  "test": {
+    "visitedFacilities": [],
+    "customerType": {
+      "name": "BRONZE",
+      "discount": 0.0,
+      "minPoints": 0
+    },
+    "colletedPoints": 0.0,
+    "username": "test",
+    "password": "test",
+    "name": "test",
+    "surname": "test",
+    "birthday": "Nov 11, 2000, 1:00:00 AM",
+    "gender": "FEMALE",
+    "userRole": "CUSTOMER",
+    "deleted": false,
+    "banned": false
+  }
+}
