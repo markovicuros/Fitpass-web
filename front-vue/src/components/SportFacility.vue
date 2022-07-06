@@ -1,11 +1,23 @@
 <template>
+  <div class="container">
   <div class="sportFacility">
-        <h3>{{sportFacility.name}}</h3>
-        <p> Location : {{sportFacility.location}}</p>
-        <p> Status : {{convertStatus(sportFacility)}}</p>
-         <p> Type: {{sportFacility.type}}</p>
-        <p> Average grade: {{sportFacility.averageGrade}}</p>
-
+    <div class="row">
+      <div class="col-sm">
+    <table>
+      <tr><td>{{sportFacility.name}}</td></tr>
+      <tr><td> Location : {{sportFacility.location}}</td></tr>
+      <tr><td> Status : {{convertStatus(sportFacility)}}</td></tr>
+      <tr><td>Type: {{sportFacility.type}}</td></tr>
+      <tr><td> Average grade: {{sportFacility.averageGrade}}</td></tr>
+      <tr><td>Open time: {{dateTime(sportFacility.openTime)}}</td></tr>
+      <tr><td> Close time: {{dateTime(sportFacility.closeTime)}}</td></tr>
+    </table>
+      </div>
+      <div class="col">
+        <img :src="getImgUrl(sportFacility.name)" :alt="sportFacility.name" class="ico"/>
+      </div>
+    </div>
+  </div>
   </div>
 </template>
 
@@ -22,7 +34,16 @@ export default {
         return "Open";
       else
         return "Closed";
+    },
+    dateTime(value) {
+      return moment(value).format('MM/DD/YYYY hh:mm');
+    },
+    getImgUrl(facility){
+      let images = require.context('../assets/', false, /\.png$/);
+      return images('./' + facility + ".png")
+
     }
+
   }/*,
   data(){
     return{
@@ -30,6 +51,7 @@ export default {
     }
   }*/
 }
+import moment from "moment";
 </script>
 
 <style scoped>

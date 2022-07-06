@@ -1,33 +1,34 @@
 <template>
-  <div class="container">
-    <nav @loggedUser="loggedInUser" class="navbar navbar-expand-xxl navbar-light" >
-      <ul class="navbar-nav ms-auto text-center">
-        <li>
-        <router-link v-if="!loggedin" class="nav-link"  to="/login">Login</router-link>
-        </li>
-        <li>
-          <router-link v-if="!loggedin" class="nav-link"  to="/register">Sign up</router-link>
-        </li>
-      </ul>
+  <div class="container-fluid">
+    <div class="row">
+      <nav @loggedUser="loggedInUser" class="navbar navbar-expand-xxl navbar-light" >
+        <ul class="navbar-nav ms-auto text-center">
+          <li>
+          <router-link v-if="!loggedin" class="nav-link"  to="/login">Login</router-link>
+          </li>
+          <li>
+            <router-link v-if="!loggedin" class="nav-link"  to="/register">Sign up</router-link>
+          </li>
+        </ul>
 
-      <div>
-        <button v-if="loggedin" style="float: right">Log out</button>
-      </div>
-
-  <!--    <HeaderView/>-->
-  <!--    <router-link to=""-->
-  <!--    <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-      <router-link to="/facilities">Facilities</router-link>-->
-    </nav>
+        <div>
+          <button @click="logOut" v-if="loggedin" style="float: right">Log out</button>
+        </div>
+      </nav>
+    </div>
 <!--  <router-view/>-->
   </div>
   <SideBarView />
-  <div :style="{ 'margin-left': sidebarWidth }">
+  <div class="container margin"  >
     <router-view @loggedUser="loggedInUser"/>
   </div>
 </template>
 <style>
+.margin {
+  margin-left: 300px;
+  max-width: 1150px;
+
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -109,11 +110,15 @@ export default {
         return true
       }else return false*/
 
+    },
+    logOut()
+    {
+      this.loggedin = false;
     }
-
   },
   setup(){
     return { sidebarWidth }
   }
+
 }
 </script>
