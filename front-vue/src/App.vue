@@ -18,7 +18,7 @@
     </div>
 <!--  <router-view/>-->
   </div>
-  <SideBarView />
+  <SideBarView :user="user" />
   <div class="container margin"  >
     <router-view @loggedUser="loggedInUser"/>
   </div>
@@ -26,7 +26,7 @@
 <style>
 .margin {
   margin-left: 300px;
-  max-width: 1150px;
+  max-width: 1220px;
 
 }
 #app {
@@ -86,34 +86,42 @@ export default {
       user: {
         username: '',
         password : '',
-
+        name : '',
+        surname : '',
+        birthday : '',
+        gender : '',
+        userRole : '',
+        deleted : false,
+        banned : false
       },
       loggedin : false
     }
   },
   created()
   {
-
-    axios.get('http://localhost:8080/FitnessCenter/rest/login/loggedUser')
-        .then(response =>{
-          this.user =response.data
-          console.log(this.user.username)
-        })
+    // axios.get('http://localhost:8080/FitnessCenter/rest/login/loggedUser')
+    //     .then(response =>{
+    //       this.user =response.data
+    //       console.log(this.user.username)
+    //     })
   },
   methods :{
     loggedInUser(obj){
      this.loggedin = obj;
-     console.log("aaa")
+     if (this.loggedin === true){
+       this.GetCurrentUser();
+     }
     },
-    isLoggedIn(user){/*
-      if(user !== null){
-        return true
-      }else return false*/
-
+    GetCurrentUser(){
+      axios.get('http://localhost:8080/FitnessCenter/rest/login/loggedUser')
+          .then(response =>{
+            this.user =response.data;
+          })
     },
     logOut()
     {
       this.loggedin = false;
+      this.user.userRole = '';
     }
   },
   setup(){

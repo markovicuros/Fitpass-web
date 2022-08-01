@@ -37,6 +37,11 @@ const routes = [
     path: '/facilitiesDetail',
     name: 'facilitiesDetail',
     component: () => import(/* webpackChunkName: "register" */ '../views/FacilitiesDetail.vue')
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: () => import(/* webpackChunkName: "register" */ '../views/AddManagers.vue')
   }
 ]
 

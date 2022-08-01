@@ -13,8 +13,10 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 
 import beans.Manager;
+import beans.UserRole;
 import dao.ManagerDao;
-@Path("managers")
+import dto.ManagerDto;
+@Path("/managers")
 public class MangerService {
 	ManagerDao managerDao = new ManagerDao();
 	
@@ -32,7 +34,7 @@ public class MangerService {
 				+ File.separator);
 	}
 	@GET
-	@Path("/")
+	@Path("/GetAll")
 	@Produces(MediaType.APPLICATION_JSON)
 	public ArrayList<Manager> getAllMangers() {
 		managerDao.setBasePath(getContext());
@@ -47,11 +49,13 @@ public class MangerService {
 		return managerDao.getAllToList();
 	}
 	@POST
-	@Path("create")	
-	@Produces(MediaType.TEXT_PLAIN)
+	@Path("/create")	
+	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
-	public void createManger(Manager manager) {
+	public Manager createManger(ManagerDto manager) {
 		managerDao.setBasePath(getContext());
-		managerDao.create(manager);
+		Manager managerNew = new Manager(manager.username, manager.password, manager.name, manager.surname, manager.birthday, manager.gerGenderEnum(), UserRole.MANAGER, manager.sportFacilityId);
+		managerDao.create(managerNew);
+		return managerNew;
 	}
 }
