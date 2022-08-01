@@ -25,7 +25,7 @@
   },
   "laza": {
     "colletedPoints": 11.0,
-    "username": "laza@g.com",
+    "username": "laza",
     "password": "lazarevic",
     "name": "m",
     "surname": "m",
@@ -47,7 +47,7 @@
     "deleted": false,
     "banned": false
   },
-  "y@g.c": {
+  "w": {
     "visitedFacilities": [],
     "customerType": {
       "name": "BRONZE",
@@ -55,29 +55,11 @@
       "minPoints": 0
     },
     "colletedPoints": 0.0,
-    "username": "y@g.c",
-    "password": "y",
-    "name": "y",
-    "surname": "y",
-    "birthday": "Jul 2, 2022, 2:00:00 AM",
-    "gender": "FEMALE",
-    "userRole": "CUSTOMER",
-    "deleted": false,
-    "banned": false
-  },
-  "test": {
-    "visitedFacilities": [],
-    "customerType": {
-      "name": "BRONZE",
-      "discount": 0.0,
-      "minPoints": 0
-    },
-    "colletedPoints": 0.0,
-    "username": "test",
-    "password": "test",
-    "name": "test",
-    "surname": "test",
-    "birthday": "Nov 11, 2000, 1:00:00 AM",
+    "username": "w",
+    "password": "w",
+    "name": "w",
+    "surname": "w",
+    "birthday": "Jun 29, 2022, 2:00:00 AM",
     "gender": "FEMALE",
     "userRole": "CUSTOMER",
     "deleted": false,

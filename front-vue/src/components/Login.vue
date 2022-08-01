@@ -38,6 +38,7 @@ export default {
                   res =>{
                       if(res.data) {
                         const loggIn = this.user;
+                        console.log(this.user.username);
                         this.$emit('loggedUser',res.data);
                         //console.log(res.data);
                       }
@@ -61,8 +62,8 @@ export default {
 .color-overlay {
  position: absolute;
 background: #2f855a;
-  height: 30%;
-  width: 30%;
+  height: 40%;
+  width: 40%;
   mix-blend-mode: normal;
 
 }

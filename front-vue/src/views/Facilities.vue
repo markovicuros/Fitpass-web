@@ -20,9 +20,9 @@
     </div>
     <div class="col-sm"></div>
 
-    <div  class="row gy-2 text-center bg-secondary text-white" >
+    <div  class="row gy-2 text-center colorDiv text-black" >
 <!--      <router-link to="/facilitiesDetail">-->
-        <div  class="container-sm d-flex align-items-center justify-content-center">
+        <div  class="container-sm d-flex align-items-center justify-content-center" >
 
          <SportFacility @click="FacilitieDetail(sportFacility)" :sportFacility="sportFacility"/>
 
@@ -83,4 +83,10 @@ export default {
 </script>
 
 <style scoped>
+.colorDiv{
+  background: #c7c9ca;
+  border-radius: 25px;
+  border: 2px solid;
+  padding: 20px;
+}
 </style>

@@ -34,10 +34,10 @@ export default {
     return{
      sportFacility:{
        sportFacilityId: '',
-      name : 'a',
-      location : '',
-      isWorking : false,
-      type : '',
+       name : '',
+       location : '',
+       isWorking : false,
+       type : '',
        worikng:false,
        closeTime:'',
        openTime:'',

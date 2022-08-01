@@ -2,7 +2,9 @@
 import SideBarLink from './SideBarLink'
 import { collapsed, toggleSidebar, sidebarWidth } from './state'
 export default {
-  props: {},
+  props: {
+    user : Object
+  },
   components: { SideBarLink },
   setup() {
     return { collapsed, toggleSidebar, sidebarWidth }
@@ -23,6 +25,7 @@ export default {
     <SideBarLink to="/" icon="fas fa-home" >Home</SideBarLink>
     <SideBarLink to="/facilities" icon="fas fa-home" >Facilities</SideBarLink>
     <SideBarLink to="/about" icon="fas fa-home" >About</SideBarLink>
+    <SideBarLink v-if="user.userRole === 'ADMIN'" to="/admin" icon="fas fa-home" >AdminView</SideBarLink>
 <!--    <SidebarLink to="/friends" icon="fas fa-users">Friends</SidebarLink>-->
 <!--    <SidebarLink to="/image" icon="fas fa-image">Images</SidebarLink>-->
 
